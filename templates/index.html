@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="static/styles.css" type="text/css" />
-</head>
-<body>
-    <nav>
-        <h1>Welcome to my homepage</h1>
-        <ul id='nav'>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Animals</li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
-    
-    <img src="static/beagle.jpg">
-    
-    <div id='footer'>
-        (C) Paul 2019<br/>
-        Email: ahkow@tanahkow.com
-    </div>
-</body>
-</html>
+{%extends "layout.html" %}
+
+{%block title %}
+Homepage
+{%endblock%}
+
+{%block content %} 
+<img src="static/beagle.jpg">
+{%endblock %}
